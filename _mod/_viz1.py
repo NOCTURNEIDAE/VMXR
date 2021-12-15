@@ -1,8 +1,20 @@
-mat = 'pointsprite1'
-mat_color = ''
+
+"""
+RENDER
+"""
 
 render_camera = 'cam1'
 render_lights = ''
+
+"""
+MATERIAL
+"""
+mat = 'pointsprite1'
+mat_color =
+
+"""
+INSTANCES
+"""
 
 inst_state = 1
 
@@ -11,12 +23,12 @@ inst_tx = 'r'
 inst_ty = 'g'
 inst_tz = 'b'
 
-inst_rot = 'viz1/null_rot'
+inst_rot = ''
 inst_rx = 'r'
 inst_ry = 'g'
 inst_rz = 'b'
 
-inst_sca = 'viz1/null_sca'
+inst_sca = ''
 inst_sx = 'r'
 inst_sy = 'g'
 inst_sz = 'b'

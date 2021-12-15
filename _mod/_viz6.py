@@ -1,9 +1,21 @@
-mat = 'phong1'
-mat_color = ''
 
+"""
+RENDER
+"""
 
 render_camera = 'cam1'
 render_lights = 'light1'
+
+"""
+MATERIAL
+"""
+
+mat = 'phong1'
+mat_color = ''
+
+"""
+INSTANCES
+"""
 
 inst_state = 1
 
