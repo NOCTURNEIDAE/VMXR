@@ -10,7 +10,7 @@ MATERIAL
 """
 
 mat = 'constant1'
-mat_color = 'mat_color'
+mat_color = ''
 
 """
 INSTANCES
