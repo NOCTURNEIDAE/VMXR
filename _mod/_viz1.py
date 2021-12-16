@@ -9,8 +9,9 @@ render_lights = ''
 """
 MATERIAL
 """
+
 mat = 'pointsprite1'
-mat_color =
+mat_color = ''
 
 """
 INSTANCES
