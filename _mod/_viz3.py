@@ -18,7 +18,3 @@ INSTANCES
 """
 
 inst_state = 0
-
-inst_texs = ''
-inst_texindexop = ''
-inst_texindex = ''
