@@ -11,9 +11,9 @@ Help: search "Extensions" in wiki
 from TDStoreTools import StorageManager
 import TDFunctions as TDF
 
-class CtrlViz1Ext:
+class PostfxExt:
 	"""
-	CtrlViz1Ext description
+	PostfxExt description
 	"""
 	def __init__(self, ownerComp):
 		# The component to which this extension is attached
