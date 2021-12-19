@@ -3,9 +3,9 @@
 # ARCHITECTURE
 #
 # /VMXR
-	/_exec
-		geo_index.py
-		viz.py
+#	/_exec
+#		geo_index.py
+#		viz.py
 #	/_ext
 #		CamExt.py
 #		MixerExt.py
@@ -47,11 +47,14 @@
 #			ctrl_viz6.tox
 #			viz6.tox
 #	/dev
-#		viz1.toe
-#		viz2.toe
-#		viz3.toe
-#		viz4.toe
-#		viz5.toe
-#		viz6.toe
+#		/viz
+#			viz1.toe
+#			viz2.toe
+#			viz3.toe
+#			viz4.toe
+#			viz5.toe
+#			viz6.toe
+#
+#		VMXR_dev.toe
 #
 #	VMXR.toe
