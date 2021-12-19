@@ -24,7 +24,7 @@ def onValueChange(channel, sampleIndex, val, prev):
 		op.Viz.Geo1 = int(val)
 
 	elif channel.name == 's2':
-		op.Viz.Geo2 = int(val)
+		op.Viz.Geo3 = int(val)
 	else:
 		pass
 		
