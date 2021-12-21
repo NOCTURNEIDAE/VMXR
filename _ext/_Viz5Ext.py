@@ -11,6 +11,11 @@ class Viz5Ext:
 						   readOnly=False)
 
 		"""
+		GEOMETRY
+		"""
+		self.Geo_out = 'viz1/null_geo'
+
+		"""
 		RENDER
 		"""
 		

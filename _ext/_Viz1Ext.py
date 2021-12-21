@@ -1,7 +1,7 @@
 
 from TDStoreTools import StorageManager
 import TDFunctions as TDF
-s
+
 class Viz1Ext:
 
 	def __init__(self, ownerComp):
@@ -9,6 +9,11 @@ class Viz1Ext:
 
 		TDF.createProperty(self, 'Index', value=1, dependable=True,
 						   readOnly=False)
+
+		"""
+		GEOMETRY
+		"""
+		self.Geo_out = 'viz1/null_geo'
 
 		"""
 		RENDER

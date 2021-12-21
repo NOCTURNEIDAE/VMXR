@@ -10,6 +10,11 @@ class Viz6Ext:
 		TDF.createProperty(self, 'Index', value=1, dependable=True,
 						   readOnly=False)
 
+		"""
+		GEOMETRY
+		"""
+		self.Geo_out = 'viz1/null_geo'
+
 
 		"""
 		RENDER
