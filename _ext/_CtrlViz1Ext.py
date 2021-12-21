@@ -9,3 +9,4 @@ class CtrlViz1Ext:
 
 		TDF.createProperty(self, 'Index', value=1, dependable=True,
 						   readOnly=False)
+
