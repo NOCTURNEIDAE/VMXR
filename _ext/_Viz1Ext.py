@@ -2,12 +2,12 @@
 from TDStoreTools import StorageManager
 import TDFunctions as TDF
 
+
 class Viz1Ext:
 
 	def __init__(self, ownerComp):
 		self.ownerComp = ownerComp
-
-		TDF.createProperty(self, 'Index', value=1, dependable=True,
+		TDF.createProperty(self, 'Index', value=op.Viz.Viz1Index, dependable=True,
 						   readOnly=False)
 
 		"""
@@ -41,14 +41,14 @@ class Viz1Ext:
 		self.Inst_tz = 'b'
 
 		self.Inst_rot = ''
-		self.Inst_rx = 'r'
-		self.Inst_ry = 'g'
-		self.Inst_rz = 'b'
+		self.Inst_rx = ''
+		self.Inst_ry = ''
+		self.Inst_rz = ''
 
 		self.Inst_sca = ''
-		self.Inst_sx = 'r'
-		self.Inst_sy = 'g'
-		self.Inst_sz = 'b'
+		self.Inst_sx = ''
+		self.Inst_sy = ''
+		self.Inst_sz = ''
 
 		self.Inst_piv = ''
 		self.Inst_sx = 'r'
@@ -64,3 +64,11 @@ class Viz1Ext:
 		self.Inst_texs = ''
 		self.Inst_texindexop = ''
 		self.Inst_texindex = ''
+
+
+		run(
+		"args[0].PostInit() if args[0] and hasattr(args[0], 'PostInit') else None",
+		self.ownerComp,
+		endFrame=True,
+		delayRef=op.TDResources
+		)

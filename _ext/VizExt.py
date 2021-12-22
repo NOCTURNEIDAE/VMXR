@@ -31,3 +31,7 @@ class VizExt:
 		TDF.createProperty(self, 'Viz6Index', value=1, dependable=True,
 						   readOnly=False)
 
+
+
+	def SetVizIndex():
+		pass
