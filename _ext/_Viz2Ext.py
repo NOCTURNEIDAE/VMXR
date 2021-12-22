@@ -13,7 +13,7 @@ class Viz2Ext:
 		"""
 		GEOMETRY
 		"""
-		self.Geo_out = 'viz1/null_geo'
+		self.Geo_out = 'viz2/null_geo'
 
 		"""
 		RENDER

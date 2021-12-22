@@ -13,7 +13,7 @@ class Viz6Ext:
 		"""
 		GEOMETRY
 		"""
-		self.Geo_out = 'viz1/null_geo'
+		self.Geo_out = 'viz6/null_geo'
 
 
 		"""
