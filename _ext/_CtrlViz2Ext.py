@@ -7,5 +7,5 @@ class CtrlViz2Ext:
 	def __init__(self, ownerComp):
 		self.ownerComp = ownerComp
 
-		TDF.createProperty(self, 'Index', value=1, dependable=True,
+		TDF.createProperty(self, 'Index', value=9, dependable=True,
 						   readOnly=False)

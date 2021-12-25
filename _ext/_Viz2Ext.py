@@ -26,7 +26,7 @@ class Viz2Ext:
 		MATERIAL
 		"""
 		
-		self.Mat = 'constant1'
+		self.Mat = ''
 		self.Mat_color = ''
 		
 		"""

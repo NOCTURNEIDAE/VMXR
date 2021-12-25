@@ -4,8 +4,6 @@ import TDFunctions as TDF
 
 class CtrlViz1Ext:
 
-	_viz1 = op.Viz
-
 	def __init__(self, ownerComp):
 		self.ownerComp = ownerComp
 
