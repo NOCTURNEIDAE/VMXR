@@ -51,9 +51,9 @@ class Viz1Ext:
 		self.Inst_sz = ''
 
 		self.Inst_piv = ''
-		self.Inst_sx = 'r'
-		self.Inst_sy = 'g'
-		self.Inst_sz = 'b'
+		self.Inst_sx = ''
+		self.Inst_sy = ''
+		self.Inst_sz = ''
 
 		self.Inst_col = 'viz1/null_col'
 		self.Inst_r = 'r'
@@ -67,8 +67,8 @@ class Viz1Ext:
 
 
 		run(
-		"args[0].PostInit() if args[0] and hasattr(args[0], 'PostInit') else None",
-		self.ownerComp,
-		endFrame=True,
-		delayRef=op.TDResources
+			"args[0].PostInit() if args[0] and hasattr(args[0], 'PostInit') else None",
+			self.ownerComp,
+			endFrame=True,
+			delayRef=op.TDResources
 		)

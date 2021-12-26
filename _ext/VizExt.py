@@ -33,5 +33,13 @@ class VizExt:
 
 
 
-	def SetVizIndex():
+	class UserMode:
+		'''
+		def __init__(self):
+			self.DEV = DEV
+			self.PERFORM = PERFORM
+
+		if dev:
+		'''
+
 		pass
