@@ -13,7 +13,7 @@ class CellularAutomataVizExt:
 		"""
 		GEOMETRY
 		"""
-		self.Geo_out = 'viz2/null_geo'
+		self.Geometry = 'viz2/null_geo'
 
 		"""
 		RENDER
@@ -33,32 +33,32 @@ class CellularAutomataVizExt:
 		INSTANCES
 		"""
 		
-		self.Inst_state = 1
+		self.Instancing = 1
 		
 		self.Inst_tra = 'viz2/null_tra'
-		self.Inst_tx = 'r'
-		self.Inst_ty = 'g'
-		self.Inst_tz = 'b'
+		self.Instancetx = 'r'
+		self.Instancety = 'g'
+		self.Instancetz = 'b'
 		
 		self.Inst_rot = 'viz2/null_rot'
-		self.Inst_rx = 'r'
-		self.Inst_ry = 'g'
-		self.Inst_rz = 'b'
+		self.Instancerx = 'r'
+		self.Instancery = 'g'
+		self.Instancerz = 'b'
 		
 		self.Inst_sca = 'viz2/null_sca'
-		self.Inst_sx = 'r'
-		self.Inst_sy = 'g'
-		self.Inst_sz = 'b'
+		self.Instancesx = 'r'
+		self.Instancesy = 'g'
+		self.Instancesz = 'b'
 		
 		self.Inst_piv = ''
-		self.Inst_sx = 'r'
-		self.Inst_sy = 'g'
-		self.Inst_sz = 'b'
+		self.Instancesx = 'r'
+		self.Instancesy = 'g'
+		self.Instancesz = 'b'
 		
 		self.Inst_col = 'viz2/null_col'
-		self.Inst_r = 'r'
-		self.Inst_g = 'g'
-		self.Inst_b = 'b'
+		self.Instancer = 'r'
+		self.Instanceg = 'g'
+		self.Instanceb = 'b'
 		self.Inst_a = 'a'
 		
 		self.Inst_texs = ''
