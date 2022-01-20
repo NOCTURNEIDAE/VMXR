@@ -96,7 +96,7 @@ in this exact order to initialize the Viz COMP''')
 	INITIALIZE
 	"""
 
-	def InitViz(self):
+	def InitRender(self):
 		op('replicator_ctrl1').par.recreateall.pulse()
 		op('replicator_viz1').par.recreateall.pulse()
 

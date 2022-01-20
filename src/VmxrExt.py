@@ -4,15 +4,17 @@ import TDFunctions as TDF
 
 class VmxrExt:
 
-	# render = op.Render
 
 	def __init__(self, ownerComp):
 		self.ownerComp = ownerComp
 
 
-	def InitRender(self, render): 
-		print(op.Render.name)
+	def InitRender(self): 
+		render = op.Render.ops('replicator*')
+		for i in len(render):
+			print(i)
 
 
 	def InitVmxr(self):
-		self.InitRender()
+		render = op.VMXR.op('render')
+		render.InitRender
