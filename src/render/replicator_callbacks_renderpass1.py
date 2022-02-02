@@ -30,6 +30,6 @@ def onReplicate(comp, allOps, newOps, template, master):
 		c.par.geometry = '_geo'+str(c.digits)
 		c.par.geometry.readOnly = True
 		
-		print(c)
+		#c.inputConnectors[0].connect(op('render1').outputConnectors[0])
 
 	return

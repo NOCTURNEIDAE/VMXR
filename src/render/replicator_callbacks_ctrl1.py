@@ -7,11 +7,6 @@
 # master - the master operator
 #
 
-def viz_list_gen(numViz):
-	for i in range(numViz):
-		pass
-		
-
 def onRemoveReplicant(comp, replicant):
 
 	replicant.destroy()
@@ -20,13 +15,19 @@ def onRemoveReplicant(comp, replicant):
 def onReplicate(comp, allOps, newOps, template, master):
 	path = op('null_path')
 
-	for c in newOps:
-		#c.display = True
-		#c.render = True
-		#c.par.display = 1
-		#c.par.clone = comp.par.master
+	for i, c in enumerate(newOps):
+
+		viz_path = op('null_path')
+		viz_name = str(viz_path[i,0])
+		print('i: ',i)
+		print('viz_path: ', viz_path, type(viz_path))
+		print('viz_name: ', viz_name, type(viz_name))
+
 		c.allowCooking = True
-		c.par.externaltox = 'D:/VMXR/Vizbank/'+str(op('null_path')[c.digits,0]) + '/ctrl.tox'
+		c.par.externaltox = 'D:/VMXR/Vizbank/'+str(op('null_path')[c.digits,0])
+		c.par.subcompname = 'ctrl'
+
+
 		c.par.reinitnet.pulse()
 		
 		

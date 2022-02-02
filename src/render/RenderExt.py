@@ -90,6 +90,11 @@ in this exact order to initialize the Viz COMP''')
 		print('2: op.Viz.InitConnections()')
 		print('----------------------------------------')
 
+	"""
+	GETTERS
+	"""
+
+	#def
 
 
 	"""
@@ -101,13 +106,11 @@ in this exact order to initialize the Viz COMP''')
 		op('replicator_viz1').par.recreateall.pulse()
 
 		
-	def InitConnections(self):
-		op('viz1').inputConnectors[0].connect(op('ctrl1').outputConnectors[0])
-		op('viz2').inputConnectors[0].connect(op('ctrl2').outputConnectors[0])
-		op('viz3').inputConnectors[0].connect(op('ctrl3').outputConnectors[0])
-		op('viz4').inputConnectors[0].connect(op('ctrl4').outputConnectors[0])
-		op('viz5').inputConnectors[0].connect(op('ctrl5').outputConnectors[0])
-		op('viz6').inputConnectors[0].connect(op('ctrl6').outputConnectors[0])
+	def InitConnect(self):
+		for i in enumerate(range(self.num_viz), 1):
+			ctrl = 'ctrl'+str(i)
+			viz = 'viz'+str(i)
+			op(viz).inputConnectors[0].connect(op(ctrl).outputConnectors[0])
 
 
 	def InitRenderPass(self):
@@ -132,6 +135,7 @@ in this exact order to initialize the Viz COMP''')
 				pass
 
 	def Init(self):
+
 		self.InitViz()
 
 	

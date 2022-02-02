@@ -15,7 +15,7 @@ class AsciiVizExt:
 		"""
 		GEOMETRY
 		"""
-		self.Geometry = 'null_geo'
+		self.Geomain = './null_geo'
 
 
 		"""
@@ -36,28 +36,29 @@ class AsciiVizExt:
 		INSTANCES
 		"""
 		
-		self.Instancing = 1
+		self.Instancing = False
+		#getattr(exec("op.Render.Geo"+str(me.digits),eval("me.curPar.name.capitalize()"))
 
-		self.Inst_tra = 'null_tra'
-		self.Inst_tx = 'tx'
-		self.Inst_ty = 'ty'
-		self.Inst_tz = 'tz'
+		self.Instancetop = 'null_tra'
+		self.Instancetx = 'tx'
+		self.Instancety = 'ty'
+		self.Instancetz = 'tz'
 		
-		self.Inst_rot = 'null_rot'
-		self.Inst_rx = 'rx'
-		self.Inst_ry = 'ry'
-		self.Inst_rz = 'rz'
+		self.Instancerop = 'null_rot'
+		self.Instancerx = 'rx'
+		self.Instancery = 'ry'
+		self.Instancerz = 'rz'
 		
-		self.Inst_sca = 'null_sca'
-		self.Inst_sx = 'r'
-		self.Inst_sy = 'g'
-		self.Inst_sz = 'b'
+		self.Instancesop = 'null_sca'
+		self.Instancesx = 'r'
+		self.Instancesy = 'g'
+		self.Instancesz = 'b'
 		
-		self.Inst_col = 'null_col'
-		self.Inst_r = 'r'
-		self.Inst_g = 'g'
-		self.Inst_b = 'b'
-		self.Inst_a = 'a'
+		self.Instancepop = 'null_col'
+		self.Instancer = 'r'
+		self.Instanceg = 'g'
+		self.Instanceb = 'b'
+		self.Instancea = 'a'
 		
 		self.Inst_texs = 'viz4/tex/tex*'
 		self.Inst_texindexop = 'viz4/null_texindexop'
