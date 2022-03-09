@@ -14,13 +14,14 @@ def onRemoveReplicant(comp, replicant):
 
 def onReplicate(comp, allOps, newOps, template, master):
 
-	for c in newOps:
+	for i,c in enumerate(newOps):
 		#c.display = True
 		#c.render = True
 		#c.par.display = 1
 		#c.par.clone = comp.par.master
 		c.dock = None
 		d = str(c.digits)
-		c.inputConnectors[0].connect(op('renderpass'+d).outputConnectors[0])
+		
+		c.inputConnectors[0].connect(op('renderpass'+str(c.digits)).outputConnectors[0])
 
 	return

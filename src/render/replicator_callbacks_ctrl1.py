@@ -18,18 +18,14 @@ def onRemoveReplicant(comp, replicant):
 	return
 
 def onReplicate(comp, allOps, newOps, template, master):
-	path = op('null_path')
 
-	for c in newOps:
-		#c.display = True
-		#c.render = True
-		#c.par.display = 1
-		#c.par.clone = comp.par.master
+
+	for i,c in enumerate(newOps):
+		viz_name = str(op('viz_list')[c.digits,0])
+		path_viz = 'D:/VMXR/Vizbank/' + viz_name +'/'+ viz_name + '.tox'
 		c.allowCooking = True
-		c.par.externaltox = 'D:/VMXR/Vizbank/'+str(op('null_path')[c.digits,0]) + '/ctrl.tox'
+		c.par.externaltox = path_viz
+		c.par.subcompname = 'ctrl'
 		c.par.reinitnet.pulse()
 		
-		
-		pass
-
 	return

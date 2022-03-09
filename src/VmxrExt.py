@@ -9,12 +9,20 @@ class VmxrExt:
 		self.ownerComp = ownerComp
 
 
-	def InitRender(self): 
-		render = op.Render.ops('replicator*')
-		for i in len(render):
-			print(i)
+	def Initialize(self):
+		
+		pass
 
+	def DebugVmxr(self):
+		pass
 
-	def InitVmxr(self):
-		render = op.VMXR.op('render')
-		render.InitRender
+	def Void(self):
+		# op.Render.Void()
+		# op.Mixer.Void()
+		pass
+
+	def Setup(self):
+		"""
+		DOCSTRING
+		"""
+		pass
